@@ -38,7 +38,7 @@ test_product_list: list[Product] = [
     Product("Google Pixel 7", price=500, quantity=250),
 ]
 
-# best_buy = Store(test_product_list)
-# test_products = best_buy.get_all_products()
-# print(best_buy.get_total_quantity())
-# print(best_buy.order([(test_products[0], 1), (test_products[1], 2)]))
+best_buy = Store(test_product_list)
+test_products = best_buy.get_all_products()
+print(best_buy.get_total_quantity())
+print(best_buy.order([(test_products[0], 1), (test_products[1], 2)]))
