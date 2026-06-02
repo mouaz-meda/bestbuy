@@ -30,15 +30,3 @@ class Store:
             total += product.buy(quantity)
         return total
 
-
-# test
-test_product_list: list[Product] = [
-    Product("MacBook Air M2", price=1450, quantity=100),
-    Product("Bose QuietComfort Earbuds", price=250, quantity=500),
-    Product("Google Pixel 7", price=500, quantity=250),
-]
-
-best_buy = Store(test_product_list)
-test_products = best_buy.get_all_products()
-print(best_buy.get_total_quantity())
-print(best_buy.order([(test_products[0], 1), (test_products[1], 2)]))
